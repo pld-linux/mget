@@ -1,12 +1,14 @@
 Summary:	A multithreated command-line download utility
 Summary(pl):	Wielow±tkowy klient HTTP/FTP
 Name:		mget
-Version:	1.3.2.2
+Version:	1.4.1
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
+#Source0Download: http://www.cse.iitk.ac.in/users/dbera/mget.php
 Source0:	http://www.cse.iitk.ac.in/users/dbera/%{name}-%{version}.tar.gz
-# Source0-md5:	8c10374704237c8f5cd054f455a3f305
+# Source0-md5:	224a5e149098274313009fb660b566dd
+Patch0:		%{name}-gcc33.patch
 URL:		http://www.cse.iitk.ac.in/users/dbera/mget.php
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,9 +25,13 @@ kilkakrotnie. Obs³uguje proxy.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-%{__make} CC="%{__cc} %{rpmcflags}"
+./genmake
+%{__make} \
+	CC="%{__cc}" \
+	DEBUG="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
