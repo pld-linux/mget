@@ -21,7 +21,7 @@ czas ci±gniêcia pliku skraca siê w niektórych przypadkach
 kilkakrotnie. Obs³uguje proxy.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %{__make} CC="%{__cc} %{rpmcflags}"
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *gz
-%attr(755,root,root) %{_bindir}/* 
+%attr(755,root,root) %{_bindir}/*
