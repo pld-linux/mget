@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.cse.iitk.ac.in/users/dbera/%{name}-%{version}.tar.gz
+# Source0-md5:	8c10374704237c8f5cd054f455a3f305
 URL:		http://www.cse.iitk.ac.in/users/dbera/mget.php
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
