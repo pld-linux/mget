@@ -5,10 +5,6 @@ Version:	1.3.2.2
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
 Source0:	http://www.cse.iitk.ac.in/users/dbera/%{name}-%{version}.tar.gz
 URL:		http://www.cse.iitk.ac.in/users/dbera/mget.php
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
