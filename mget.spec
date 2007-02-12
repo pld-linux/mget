@@ -1,5 +1,5 @@
 Summary:	A multithreated command-line download utility
-Summary(pl):	Wielow±tkowy klient HTTP/FTP
+Summary(pl.UTF-8):   WielowÄ…tkowy klient HTTP/FTP
 Name:		mget
 Version:	1.4.1
 Release:	1
@@ -17,11 +17,11 @@ This is a command line download manager. It splits the file into a
 number of segments and uses several separate threads to download each
 segment. It can handle proxies.
 
-%description -l pl
-Wielow±tkowe narzêdzie do ¶ci±gania plików. Potrafi podzieliæ plik na
-segmenty i ¶ci±gaæ je kilka na raz w tym samym czasie. Dziêki temu
-czas ci±gniêcia pliku skraca siê w niektórych przypadkach
-kilkakrotnie. Obs³uguje proxy.
+%description -l pl.UTF-8
+WielowÄ…tkowe narzÄ™dzie do Å›ciÄ…gania plikÃ³w. Potrafi podzieliÄ‡ plik na
+segmenty i Å›ciÄ…gaÄ‡ je kilka na raz w tym samym czasie. DziÄ™ki temu
+czas ciÄ…gniÄ™cia pliku skraca siÄ™ w niektÃ³rych przypadkach
+kilkakrotnie. ObsÅ‚uguje proxy.
 
 %prep
 %setup -q
