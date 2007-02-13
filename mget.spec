@@ -1,5 +1,5 @@
 Summary:	A multithreated command-line download utility
-Summary(pl.UTF-8):   Wielowątkowy klient HTTP/FTP
+Summary(pl.UTF-8):	Wielowątkowy klient HTTP/FTP
 Name:		mget
 Version:	1.4.1
 Release:	1
